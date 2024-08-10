@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 460px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+   color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: relative;
+}
+.wrapper img{
+   margin-left: 23%;
+
+}
+.wrapper h1 {
+  
+  font-size: 23px;
+  font-weight:600;
+  text-align: center;
+  margin-top: -5%;
+  color: rgb(21, 21, 133);
+}
+.wrapper .div-input {
+ width: 100%;
+ height: 50px;
+ 
+ margin: 30px 0;
+}
+.div-input .per{
+    font-size: 1.3rem;
+ position: absolute;
+ top:calc(46%);
+ left: calc(12%);
+ color:  rgb(21, 21, 133);
+ font-weight: bolder;
+}
+
+
+.div-input .key{
+    font-size: 1.5rem;
+ position: absolute;
+ top:calc(65%);
+ left: calc(12%);
+ transform: rotate(50deg);
+}
+
+.div-input .eye i{
+    font-size: 1.2rem;
+    display: flex;
+ position: absolute;
+ top:calc(67%);
+ right: calc(13%);
+ cursor: pointer;
+ /* margin-left: 345px; */
+}
+
+.div-input input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(227, 21, 42);
+    border-radius: 10px;
+    font-size: 16px;
+   border-color: black;
+   outline: none;
+   padding-left: 45px;
+   
+}
+.div-input input:focus{
+ /* border-color: rgb(21, 21, 133); */
+ border: 3px solid rgb(21, 21, 133);
+}
+
+ 
+
+ 
+
+.input-box input::placeholder{
+    color: gray;
+}
+/* .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50);
+    font-size: 20px;
+} */
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(21, 21, 133);
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+form{
+    width: auto;
+}
+
+ 

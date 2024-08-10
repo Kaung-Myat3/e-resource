@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+   
+    
+    
+ </head>
+ <body ng-app="myApp">
+    <div class="wrapper">
+       <form action="">
+        <img  alt="" src="assets/images/kbz_bank.png" width="50%" height="20%" >
+        <br>
+        <h1>Welcome to Admin Portal</h1>
+
+        <br>
+
+       <div ng-controller="myCtrl">
+        <div class="div-input" >
+          
+         <span><i class="bi bi-person per"></i></span>
+         <input type="text" placeholder=" UserName"   required>
+            
+        </div>
+   
+
+        <div class="div-input">
+
+         <span><i class="bi bi-key-fill key"></i></span>
+         <span class="eye" (click)="viewpass()"><i [ngClass]="visible?'bi bi-eye':'bi bi-eye-slash'"></i></span>
+         <input [type]="changetype?'password':'text'" placeholder=" Password" minlength="6"  required>
+            
+        </div>
+      </div>
+        <button type="submit" class="btn">Login</button>
+       
+       
+       </form>
+
+    </div>
+   
+<script>
+angular.module('myApp', [])
+.controller('myCtrl', ['$scope', function($scope) {
+    $scope.count = 0;
+    $scope.myFunc = function() {
+        $scope.count++;
+    };
+}]);
+</script>
+ </body>
+ </html>
